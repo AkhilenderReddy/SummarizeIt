@@ -1,6 +1,7 @@
 
 # SummarizeIt   <img src="extension/icon.png" alt="SummarizeIt Logo" width="30px" height="30px">  
  
+<img src="extension/img1.png" alt="SummarizeIt Logo" width="500px" height="300px">                   <img src="extension/img2.png" alt="SummarizeIt Logo" width="500px" height="300px">  
 
 
 ## Overview
