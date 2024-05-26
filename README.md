@@ -1,4 +1,5 @@
-# SummarizeIt
+# SummarizeIt ![SummarizeIt Logo](extension/icon.png)
+
 
 ## Overview
 
