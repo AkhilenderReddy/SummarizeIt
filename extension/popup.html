@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Youtube Transcript Summariser</title>
+    <style>
+        html, body {
+            background-image: linear-gradient(to bottom, #00346b, #020d1d);
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: max-content;
+            max-width: max-content;
+            margin: 0;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            
+        }
+        .mainbody {
+            position: relative; 
+
+            width: 400px;
+            height: fit-content;
+            border-radius: 25px;
+            padding: 10px;
+            --s: 200px; 
+            --c1: #030155;
+            --c2: #002164;
+            --c3: #000436;
+
+            background: repeating-conic-gradient(
+                    from 30deg,
+                    #0000 0 120deg,
+                    var(--c3) 0 180deg
+                )
+                calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+                repeating-conic-gradient(
+                from 30deg,
+                var(--c1) 0 60deg,
+                var(--c2) 0 120deg,
+                var(--c3) 0 180deg
+                );
+            background-size: var(--s) calc(var(--s) * 0.577);
+            scrollbar-color: rgb(0, 0, 0) rgb(245, 245, 245);
+            scrollbar-width: thin;
+            
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center; 
+            padding: 0;
+            line-height: 25px;
+        }
+
+        h1 {
+            top: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #ff0000; 
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+        button:hover {
+            background-color: #ff6161;
+        }
+        button[disabled] {
+            background-color: rgb(253, 168, 168);
+            color: white;
+            border-radius: 10px;
+            padding: 10px 10px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border: none;
+            cursor: not-allowed;
+        }
+        .answer{
+            margin: 15px;
+            background-color: #ffffff;
+            border: 1px solid ;
+            border-radius: 15px;
+            opacity: 0.7;
+            box-shadow:  5px 5px 10px #cccccc,
+             -5px -5px 10px #f4f4f4;
+        }
+        div.answer .heading{
+            font-size: 20px;
+            text-align: center;
+            margin: 5%;
+            font-weight: bold;
+            color: #0e0000;
+
+        } 
+        div.answer p {
+            font-size: medium;
+            text-align: center;
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbody">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        
+        <h1>Youtube Summariser</h1>
+        <button id="summarise" type="button">Summarise</button>
+        <br/>
+        <div class="answer">
+            <p id="heading"></p>
+            <p id="output">Summary</p>
+
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "SummarizeIt",
+    "description": "Effortlessly condense YouTube videos into concise summaries. Save time and get the gist of any video with SummarizeIt!",
+    "version": "1.0",
+    "permissions": ["activeTab", "declarativeContent"],
+    "host_permissions": ["http://127.0.0.1:5000/*"],
+    "action": {
+        "default_title": "Summarize this video",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
