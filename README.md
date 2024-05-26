@@ -1,4 +1,5 @@
 # SummarizeIt ![SummarizeIt Logo](extension/icon.png)
+<img src="extension/icon.png" alt="SummarizeIt Logo" width="200" height="200">
 
 
 ## Overview
